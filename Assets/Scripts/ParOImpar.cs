@@ -7,6 +7,7 @@ public class ParOImpar : MonoBehaviour
 {
     public TextMeshProUGUI resultado;
     public TMP_InputField input;
+    int num1;
 
     // Start is called before the first frame update
     void Start()
@@ -22,8 +23,8 @@ public class ParOImpar : MonoBehaviour
 
     public void EsPar()
     {
-        int num = int.Parse(input.text);
-        if (num % 2 == 0)
+        num1 = int.Parse(input.text);
+        if (num1 % 2 == 0)
         {
             resultado.text = "El número es par";
         }
