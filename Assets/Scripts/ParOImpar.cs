@@ -24,7 +24,12 @@ public class ParOImpar : MonoBehaviour
     public void EsPar()
     {
         num1 = int.Parse(input.text);
-        if (num1 % 2 == 0)
+        
+        if(num1 <= 0)
+        {
+            resultado.text = "El número debe ser positivo";
+        }
+        else if (num1 % 2 == 0)
         {
             resultado.text = "El número es par";
         }
